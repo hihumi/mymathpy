@@ -41,6 +41,7 @@ class TestMyFunctions(unittest.TestCase):
         actual   = even_for_range.even_for_range(10)
         self.assertEqual(expected,  actual)
 
+
     def test_odd_for_range(self):
         self.assertEqual(odd_for_range.odd_for_range(10), odd_for_range.odd_for_range(10))
         print()
