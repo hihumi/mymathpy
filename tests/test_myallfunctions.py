@@ -9,11 +9,13 @@
 
 import unittest
 
+# mymodule
 import even_for_range
 import odd_for_range
 import mod_three
 import even_or_odd
 import classify_mod_four
+import multi_of_seven
 
 class TestMyAllFunctions(unittest.TestCase):
 
@@ -106,7 +108,8 @@ class TestMyAllFunctions(unittest.TestCase):
         actual   = even_or_odd.even_or_odd(10)
         self.assertEqual(expected, actual)
 
-    def test_classify_mod_for(self):
+    # classify_mod_four
+    def test_classify_mod_four(self):
         self.assertEqual(classify_mod_four.classify_mod_four(15), classify_mod_four.classify_mod_four(15))
         print()
 
@@ -138,6 +141,27 @@ class TestMyAllFunctions(unittest.TestCase):
         expected = c_m_f(15)
         actual   = classify_mod_four.classify_mod_four(15)
         self.assertEqual(expected, actual)
+
+    # multi_of_seven
+    def test_multi_of_seven(self):
+        self.assertEqual(multi_of_seven.multi_of_seven(), multi_of_seven.multi_of_seven())
+        print()
+
+        self.assertEqual(multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9), multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9))
+
+        def m_o_s(seven = 7, begin = 0, end = 9):
+            counter = begin
+            while True:
+                res = seven * counter
+                print('{0} * {1} = {2}'.format(seven, counter, res))
+                if counter == end:
+                    break
+                counter += 1
+
+        expected = m_o_s()
+        actual   = multi_of_seven.multi_of_seven(seven = 7, begin = 0, end = 9)
+        self.assertEqual(expected, actual)
+
 
 """
 if __name__ == '__main__':
