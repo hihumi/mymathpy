@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""$ python3 -m unittest -v tests.test_myfunctions
-   $ python3 -m unittest tests.test_myfunctions
+"""$ python3 -m unittest -v tests.test_myallfunctions
+   $ python3 -m unittest tests.test_myallfunctions
+   $ python3 -m unittest -v tests.test_filename
+   $ python3 -m unittest -v testdirname.test_filename
 """
 
 import unittest
@@ -10,8 +12,9 @@ import unittest
 import even_for_range
 import odd_for_range
 import mod_three
+import even_or_odd
 
-class TestMyFunctions(unittest.TestCase):
+class TestMyAllFunctions(unittest.TestCase):
 
     # test_funcs_name
     """
@@ -84,3 +87,24 @@ class TestMyFunctions(unittest.TestCase):
         self.assertEqual(expected, actual)
 
 
+    # even_or_odd
+    def test_even_or_odd(self):
+        self.assertEqual(even_or_odd.even_or_odd(10), even_or_odd.even_or_odd(10))
+
+        def t_e_o_o(x):
+            counter = 0
+            while counter <= x:
+                if counter % 2 == 0:
+                    print('even num: {0}'.format(counter))
+                else:
+                    print('odd num: {0}'.format(counter))
+                counter += 1
+
+        expected = t_e_o_o(10)
+        actual   = even_or_odd.even_or_odd(10)
+        self.assertEqual(expected, actual)
+
+"""
+if __name__ == '__main__':
+    unittest.main()
+"""
