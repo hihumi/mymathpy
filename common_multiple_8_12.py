@@ -10,6 +10,11 @@ def common_multiple_8_12(eight, twelve):
     引数:
         eight: 8の倍数を求めるための数値
         twelve: 12の倍数を求めるための数値
+    例:
+        common_multiple_8_12(50, 60)
+        引数の数値50が8の倍数を50まで求める。
+        引数の数値60が12の倍数を60まで求める。
+        実行結果: 8と12の最小公倍数: 24
 
     単体テスト: doctest:
     >>> common_multiple_8_12(50, 60)
