@@ -4,7 +4,7 @@
 """算数問題: 8と12の最小公倍数を求めなさい。
 """
 
-def common_multiple_8_12(eight, twelve):
+def lowest_common_multiple_8_12(eight, twelve):
     """8と12の最小公倍数を求める関数
 
     引数:
@@ -17,7 +17,7 @@ def common_multiple_8_12(eight, twelve):
         実行結果: 8と12の最小公倍数: 24
 
     単体テスト: doctest:
-    >>> common_multiple_8_12(50, 60)
+    >>> lowest_common_multiple_8_12(50, 60)
     8と12の最小公倍数: 24
     """
 
@@ -34,5 +34,5 @@ def common_multiple_8_12(eight, twelve):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-    common_multiple_8_12(50, 60)
+    lowest_common_multiple_8_12(50, 60)
 
