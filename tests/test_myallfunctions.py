@@ -18,7 +18,8 @@ import classify_mod_four
 import multi_of_seven
 import multi_of_6_from_1_to_100
 import common_multiple_4_8
-import common_multiple_8_12
+import lowest_common_multiple_8_12
+import one_side_of_square
 
 class TestMyAllFunctions(unittest.TestCase):
 
@@ -204,11 +205,13 @@ class TestMyAllFunctions(unittest.TestCase):
         actual   = common_multiple_4_8.common_multiple_4_8(25, 50)
         self.assertEqual(expected, actual)
 
-    def test_common_multiple_8_12(self):
-        self.assertEqual(common_multiple_8_12.common_multiple_8_12(50, 60), common_multiple_8_12.common_multiple_8_12(50, 60))
+
+    # lowest_common_multiple_8_12
+    def test_lowest_common_multiple_8_12(self):
+        self.assertEqual(lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60), lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60))
         print()
 
-        def c_m_8_12(eight, twelve):
+        def l_c_m_8_12(eight, twelve):
             common_multiple_8 = [i for i in range(1, eight + 1) if i % 8 == 0]
             common_multiple_12 = [j for j in range(1, twelve + 1) if j % 12 == 0]
 
@@ -218,8 +221,31 @@ class TestMyAllFunctions(unittest.TestCase):
             res = min(c_m_8_12_intersec)
             print('8と12の最小公倍数: {0}'.format(res))
 
-        expected = c_m_8_12(50, 60)
-        actual   = common_multiple_8_12.common_multiple_8_12(50, 60)
+        expected = l_c_m_8_12(50, 60)
+        actual   = lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60)
+        self.assertEqual(expected, actual)
+
+
+    # one_side_of_square
+    def test_one_side_of_square(self):
+        self.assertEqual(one_side_of_square.one_side_of_square(), one_side_of_square.one_side_of_square())
+        print()
+
+        def o_s_o_s():
+
+            height = 6
+            width  = 9
+
+            common_multiple_6 = [i for i in range(1, 51) if i % height == 0]
+            common_multiple_9 = [j for j in range(1, 51) if j % width == 0]
+
+            c_m_6_set = set(common_multiple_6)
+            c_m_9_set = set(common_multiple_9)
+            res = min(c_m_6_set.intersection(c_m_9_set))
+            print('正方形1辺の長さ: {0}'.format(res))
+
+        expected = o_s_o_s()
+        actual   = one_side_of_square.one_side_of_square()
         self.assertEqual(expected, actual)
 
 
