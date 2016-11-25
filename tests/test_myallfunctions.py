@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """$ python3 -m unittest -v tests.test_myallfunctions
    $ python3 -m unittest tests.test_myallfunctions

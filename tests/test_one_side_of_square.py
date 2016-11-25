@@ -12,7 +12,7 @@ class TestOneSideOfSquare(unittest.TestCase):
         def o_s_o_s():
 
             height = 6
-            width  = 9
+            width = 9
 
             common_multiple_6 = [i for i in range(1, 51) if i % height == 0]
             common_multiple_9 = [j for j in range(1, 51) if j % width == 0]
@@ -23,6 +23,6 @@ class TestOneSideOfSquare(unittest.TestCase):
             print('正方形1辺の長さ: {0}'.format(res))
 
         expected = o_s_o_s()
-        actual   = one_side_of_square.one_side_of_square()
+        actual = one_side_of_square.one_side_of_square()
         self.assertEqual(expected, actual)
 

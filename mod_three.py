@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def mod_three(x):
     """3で割ったときの余りを求める関数。

@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def odd_for_range(x):
     """奇数をforとrangeで出力する関数。

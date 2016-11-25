@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def multi_of_seven(seven = 7, begin = 0, end = 9):
     """7の倍数、7の整数倍を出力する関数。

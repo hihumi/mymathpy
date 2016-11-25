@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def multi_of_6_from_1_to_100(x = 100):
     """1から100までの整数から6の倍数を出力する関数

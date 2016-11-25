@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def common_multiple_4_8(four = 25, eight= 50):
     """4の倍数と8の倍数と公倍数を出力する関数。

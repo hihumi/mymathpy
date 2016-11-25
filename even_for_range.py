@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def even_for_range(x):
     """偶数をforとrangeで出力する関数。

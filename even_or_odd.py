@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def even_or_odd(x):
     """ 整数を、偶数か奇数かで出力する関数。
