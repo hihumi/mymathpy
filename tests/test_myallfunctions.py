@@ -20,6 +20,7 @@ import multi_of_6_from_1_to_100
 import common_multiple_4_8
 import lowest_common_multiple_8_12
 import one_side_of_square
+import divisor_of_8
 
 class TestMyAllFunctions(unittest.TestCase):
 
@@ -247,6 +248,22 @@ class TestMyAllFunctions(unittest.TestCase):
         expected = o_s_o_s()
         actual   = one_side_of_square.one_side_of_square()
         self.assertEqual(expected, actual)
+
+    # divisor_of_8
+    def test_divisor_of_8(self):
+        self.assertEqual(divisor_of_8.divisor_of_8(),
+             divisor_of_8.divisor_of_8())
+        print()
+
+        def d_v_o_8():
+            eight = 8
+            res = [i for i in range(1, eight + 1) for j in range(1, eight + 1)
+                   if i * j == eight]
+            print('8の約数: {0}'.format(res))
+
+        expected = d_v_o_8()
+        actual = divisor_of_8.divisor_of_8()
+
 
 
 """
