@@ -24,7 +24,7 @@ def one_side_of_square():
     """
 
     height = 6
-    width  = 9
+    width = 9
 
     common_multiple_6 = [i for i in range(1, 51) if i % height == 0]
     common_multiple_9 = [j for j in range(1, 51) if j % width == 0]

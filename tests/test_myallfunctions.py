@@ -42,7 +42,8 @@ class TestMyAllFunctions(unittest.TestCase):
 
     # even_for_range
     def test_even_for_range(self):
-        self.assertEqual(even_for_range.even_for_range(10), even_for_range.even_for_range(10))
+        self.assertEqual(even_for_range.even_for_range(10),
+                         even_for_range.even_for_range(10))
         print()
 
         def t_e_f_r(x):
@@ -51,13 +52,14 @@ class TestMyAllFunctions(unittest.TestCase):
                     print(i)
 
         expected = t_e_f_r(10)
-        actual   = even_for_range.even_for_range(10)
+        actual = even_for_range.even_for_range(10)
         self.assertEqual(expected,  actual)
 
 
     # odd_for_range
     def test_odd_for_range(self):
-        self.assertEqual(odd_for_range.odd_for_range(10), odd_for_range.odd_for_range(10))
+        self.assertEqual(odd_for_range.odd_for_range(10),
+                         odd_for_range.odd_for_range(10))
         print()
 
         def t_o_f_r(x):
@@ -66,13 +68,14 @@ class TestMyAllFunctions(unittest.TestCase):
                     print(i)
 
         expected = t_o_f_r(10)
-        actual   = odd_for_range.odd_for_range(10)
+        actual = odd_for_range.odd_for_range(10)
         self.assertEqual(expected, actual)
 
 
     # mod_three
     def test_mod_three(self):
-        self.assertEqual(mod_three.mod_three(20), mod_three.mod_three(20))
+        self.assertEqual(mod_three.mod_three(20),
+                         mod_three.mod_three(20))
         print()
 
         def t_m_t(x):
@@ -91,13 +94,14 @@ class TestMyAllFunctions(unittest.TestCase):
                     print('{0} / 3 = {1} ... {2}'.format(i, div_i_3_2, r_2))
 
         expected = t_m_t(20)
-        actual   = mod_three.mod_three(20)
+        actual = mod_three.mod_three(20)
         self.assertEqual(expected, actual)
 
 
     # even_or_odd
     def test_even_or_odd(self):
-        self.assertEqual(even_or_odd.even_or_odd(10), even_or_odd.even_or_odd(10))
+        self.assertEqual(even_or_odd.even_or_odd(10),
+                         even_or_odd.even_or_odd(10))
         print()
 
         def t_e_o_o(x):
@@ -110,12 +114,13 @@ class TestMyAllFunctions(unittest.TestCase):
                 counter += 1
 
         expected = t_e_o_o(10)
-        actual   = even_or_odd.even_or_odd(10)
+        actual = even_or_odd.even_or_odd(10)
         self.assertEqual(expected, actual)
 
     # classify_mod_four
     def test_classify_mod_four(self):
-        self.assertEqual(classify_mod_four.classify_mod_four(15), classify_mod_four.classify_mod_four(15))
+        self.assertEqual(classify_mod_four.classify_mod_four(15),
+                         classify_mod_four.classify_mod_four(15))
         print()
 
         def c_m_f(x):
@@ -144,15 +149,17 @@ class TestMyAllFunctions(unittest.TestCase):
             print('余り3: {0}'.format(r_3))
 
         expected = c_m_f(15)
-        actual   = classify_mod_four.classify_mod_four(15)
+        actual = classify_mod_four.classify_mod_four(15)
         self.assertEqual(expected, actual)
 
     # multi_of_seven
     def test_multi_of_seven(self):
-        self.assertEqual(multi_of_seven.multi_of_seven(), multi_of_seven.multi_of_seven())
+        self.assertEqual(multi_of_seven.multi_of_seven(),
+                         multi_of_seven.multi_of_seven())
         print()
 
-        self.assertEqual(multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9), multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9))
+        self.assertEqual(multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9),
+             multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9))
 
         def m_o_s(seven = 7, begin = 0, end = 9):
             counter = begin
@@ -164,13 +171,14 @@ class TestMyAllFunctions(unittest.TestCase):
                 counter += 1
 
         expected = m_o_s()
-        actual   = multi_of_seven.multi_of_seven(seven = 7, begin = 0, end = 9)
+        actual = multi_of_seven.multi_of_seven(seven = 7, begin = 0, end = 9)
         self.assertEqual(expected, actual)
 
 
     # multi_of_6_from_1_to_100
     def test_multi_of_6_from_1_to_100(self):
-        self.assertEqual(multi_of_6_from_1_to_100.multi_of_6_from_1_to_100(), multi_of_6_from_1_to_100.multi_of_6_from_1_to_100())
+        self.assertEqual(multi_of_6_from_1_to_100.multi_of_6_from_1_to_100(),
+                         multi_of_6_from_1_to_100.multi_of_6_from_1_to_100())
 
         def m_o_6_f_1_t_100(x = 100):
             res1 = [i for i in range(1, x + 1) if i % 6 == 0]
@@ -179,13 +187,14 @@ class TestMyAllFunctions(unittest.TestCase):
             print('個数: {0}'.format(length))
 
         expected = m_o_6_f_1_t_100()
-        actual   = multi_of_6_from_1_to_100.multi_of_6_from_1_to_100()
+        actual = multi_of_6_from_1_to_100.multi_of_6_from_1_to_100()
         self.assertEqual(expected, actual)
 
 
     # common_multiple_4_8
     def test_common_multiple_4_8(self):
-        self.assertEqual(common_multiple_4_8.common_multiple_4_8(25, 50), common_multiple_4_8.common_multiple_4_8(25, 50))
+        self.assertEqual(common_multiple_4_8.common_multiple_4_8(25, 50),
+                         common_multiple_4_8.common_multiple_4_8(25, 50))
         print()
 
         def c_m_4_8(four = 25, eight= 50):
@@ -203,13 +212,14 @@ class TestMyAllFunctions(unittest.TestCase):
             print('4と8の公倍数(intersection()を使用した場合): {0}'.format(m_4_set.intersection(m_8_set)))
 
         expected = c_m_4_8(25, 50)
-        actual   = common_multiple_4_8.common_multiple_4_8(25, 50)
+        actual = common_multiple_4_8.common_multiple_4_8(25, 50)
         self.assertEqual(expected, actual)
 
 
     # lowest_common_multiple_8_12
     def test_lowest_common_multiple_8_12(self):
-        self.assertEqual(lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60), lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60))
+        self.assertEqual(lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60),
+                         lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60))
         print()
 
         def l_c_m_8_12(eight, twelve):
@@ -223,19 +233,20 @@ class TestMyAllFunctions(unittest.TestCase):
             print('8と12の最小公倍数: {0}'.format(res))
 
         expected = l_c_m_8_12(50, 60)
-        actual   = lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60)
+        actual = lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60)
         self.assertEqual(expected, actual)
 
 
     # one_side_of_square
     def test_one_side_of_square(self):
-        self.assertEqual(one_side_of_square.one_side_of_square(), one_side_of_square.one_side_of_square())
+        self.assertEqual(one_side_of_square.one_side_of_square(),
+                         one_side_of_square.one_side_of_square())
         print()
 
         def o_s_o_s():
 
             height = 6
-            width  = 9
+            width = 9
 
             common_multiple_6 = [i for i in range(1, 51) if i % height == 0]
             common_multiple_9 = [j for j in range(1, 51) if j % width == 0]
@@ -246,7 +257,7 @@ class TestMyAllFunctions(unittest.TestCase):
             print('正方形1辺の長さ: {0}'.format(res))
 
         expected = o_s_o_s()
-        actual   = one_side_of_square.one_side_of_square()
+        actual = one_side_of_square.one_side_of_square()
         self.assertEqual(expected, actual)
 
     # divisor_of_8
