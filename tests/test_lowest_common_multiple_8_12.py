@@ -5,7 +5,8 @@ import lowest_common_multiple_8_12
 
 class TestLowestCommonMultiple_8_12(unittest.TestCase):
     def test_lowest_common_multiple_8_12(self):
-        self.assertEqual(lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60), lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60))
+        self.assertEqual(lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60),
+                         lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60))
         print()
 
         def l_c_m_8_12(eight, twelve):
@@ -19,5 +20,5 @@ class TestLowestCommonMultiple_8_12(unittest.TestCase):
             print('8と12の最小公倍数: {0}'.format(res))
 
         expected = l_c_m_8_12(50, 60)
-        actual   = lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60)
+        actual = lowest_common_multiple_8_12.lowest_common_multiple_8_12(50, 60)
         self.assertEqual(expected, actual)

@@ -6,7 +6,8 @@ import one_side_of_square
 
 class TestOneSideOfSquare(unittest.TestCase):
     def test_one_side_of_square(self):
-        self.assertEqual(one_side_of_square.one_side_of_square(), one_side_of_square.one_side_of_square())
+        self.assertEqual(one_side_of_square.one_side_of_square(),
+                         one_side_of_square.one_side_of_square())
         print()
 
         def o_s_o_s():

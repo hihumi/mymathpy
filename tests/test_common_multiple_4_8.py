@@ -5,7 +5,8 @@ import common_multiple_4_8
 
 class TestCommonMultiple_4_8(unittest.TestCase):
     def test_common_multiple_4_8(self):
-        self.assertEqual(common_multiple_4_8.common_multiple_4_8(25, 50), common_multiple_4_8.common_multiple_4_8(25, 50))
+        self.assertEqual(common_multiple_4_8.common_multiple_4_8(25, 50),
+                         common_multiple_4_8.common_multiple_4_8(25, 50))
         print()
 
         def c_m_4_8(four = 25, eight= 50):
@@ -23,5 +24,5 @@ class TestCommonMultiple_4_8(unittest.TestCase):
             print('4と8の公倍数(intersection()を使用した場合): {0}'.format(m_4_set.intersection(m_8_set)))
 
         expected = c_m_4_8(25, 50)
-        actual   = common_multiple_4_8.common_multiple_4_8(25, 50)
+        actual = common_multiple_4_8.common_multiple_4_8(25, 50)
         self.assertEqual(expected, actual)

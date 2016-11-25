@@ -24,5 +24,5 @@ class TestModThree(unittest.TestCase):
                     print('{0} / 3 = {1} ... {2}'.format(i, div_i_3_2, r_2))
 
         expected = t_m_t(20)
-        actual   = mod_three.mod_three(20)
+        actual = mod_three.mod_three(20)
         self.assertEqual(expected, actual)

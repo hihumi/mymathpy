@@ -5,7 +5,8 @@ import classify_mod_four
 
 class TestClassifyModFour(unittest.TestCase):
     def test_classify_mod_for(self):
-        self.assertEqual(classify_mod_four.classify_mod_four(15), classify_mod_four.classify_mod_four(15))
+        self.assertEqual(classify_mod_four.classify_mod_four(15),
+                         classify_mod_four.classify_mod_four(15))
         print()
 
         def c_m_f(x):
@@ -34,6 +35,6 @@ class TestClassifyModFour(unittest.TestCase):
             print('余り3: {0}'.format(r_3))
 
         expected = c_m_f(15)
-        actual   = classify_mod_four.classify_mod_four(15)
+        actual = classify_mod_four.classify_mod_four(15)
         self.assertEqual(expected, actual)
 
