@@ -158,7 +158,7 @@ class TestMyAllFunctions(unittest.TestCase):
         print()
 
         self.assertEqual(multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9),
-             multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9))
+                         multi_of_seven.multi_of_seven(seven = 7, begin = -9, end = 9))
 
         def m_o_s(seven = 7, begin = 0, end = 9):
             counter = begin
