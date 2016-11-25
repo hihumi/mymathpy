@@ -34,7 +34,7 @@ class TestMyAllFunctions(unittest.TestCase):
            do something
 
         expected = ___
-        actual   = ___
+        actual = ___
         self.assert___
 
     """
