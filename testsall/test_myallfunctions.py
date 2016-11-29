@@ -274,7 +274,9 @@ class TestMyAllFunctions(unittest.TestCase):
         expected = d_v_o_8()
         actual = divisor_of_8.divisor_of_8()
 
-
+    # 以下、fileは分割:
+    # common_divisor_8_12
+    # linear_equation
 
 """
 if __name__ == '__main__':
