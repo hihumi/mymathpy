@@ -17,3 +17,4 @@ class TestDivisorOf8(unittest.TestCase):
 
         expected = d_v_o_8()
         actual = divisor_of_8.divisor_of_8()
+        self.assertEqual(expected, actual)

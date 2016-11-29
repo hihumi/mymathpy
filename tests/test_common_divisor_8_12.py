@@ -28,3 +28,5 @@ class TestCommonDivisor_8_12(unittest.TestCase):
 
         expected = c_d_8_12()
         actual = common_divisor_8_12.common_divisor_8_12()
+        self.assertEqual(expected, actual)
+
