@@ -9,11 +9,11 @@ class TestOddForRange(unittest.TestCase):
                          odd_for_range.odd_for_range(10))
         print()
 
-        def t_o_f_r(x):
+        def o_f_r(x):
             for i in range(x):
                 if i % 2 == 1:
                     print(i)
 
-        expected = t_o_f_r(10)
+        expected = o_f_r(10)
         actual = odd_for_range.odd_for_range(10)
         self.assertEqual(expected, actual)

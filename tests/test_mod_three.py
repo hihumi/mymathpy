@@ -8,7 +8,7 @@ class TestModThree(unittest.TestCase):
         self.assertEqual(mod_three.mod_three(20), mod_three.mod_three(20))
         print()
 
-        def t_m_t(x):
+        def m_t(x):
             for i in range(x):
                 if i % 3 == 0:
                     div_i_3_0 = i//3
@@ -23,6 +23,6 @@ class TestModThree(unittest.TestCase):
                     r_2       = i%3
                     print('{0} / 3 = {1} ... {2}'.format(i, div_i_3_2, r_2))
 
-        expected = t_m_t(20)
+        expected = m_t(20)
         actual = mod_three.mod_three(20)
         self.assertEqual(expected, actual)
