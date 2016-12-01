@@ -41,7 +41,7 @@ def le_cx_equal_n(lhs_coef, rhs_num):
 
     try:
         res = rhs_num // lhs_coef
-    except ZeroDivisionError as err:
+    except (TypeError, ValueError, ZeroDivisionError) as err:
         print('{0}'.format(err))
     else:
         print('{0}{1} = {2}'.format(lhs_coef, x_str, rhs_num))

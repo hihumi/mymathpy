@@ -7,7 +7,6 @@ class TestLeCXEqualN(unittest.TestCase):
     def test_le_cx_equal_n(self):
         self.assertEqual(le_cx_equal_n.le_cx_equal_n(6, -78),
                          le_cx_equal_n.le_cx_equal_n(6, -78))
-
         print()
 
         def l_c_e_n(lhs_coef, rhs_num):
@@ -15,7 +14,7 @@ class TestLeCXEqualN(unittest.TestCase):
 
             try:
                 res = rhs_num // lhs_coef
-            except ZeroDivisionError as err:
+            except (TypeError, ValueError, ZeroDivisionError) as err:
                 print('{0}'.format(err))
             else:
                 print('{0}{1} = {2}'.format(lhs_coef, x_str, rhs_num))
