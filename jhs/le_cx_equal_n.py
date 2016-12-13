@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
 """数学問題: 1次方程式
-6x = -78 を解くような汎用的な関数を作成しなさい
+6x = -78 を解く関数を作成しなさい
 """
 
 def le_cx_equal_n(lhs_coef, rhs_num):
     """6x = -78 のような1次方程式を解く関数
 
     引数:
-        lhs_coef: 左辺の係数
+        lhs_coef: 左辺xの係数
         rhs_num: 右辺の値
 
     返り値, 戻り値:
